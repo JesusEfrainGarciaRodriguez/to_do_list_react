@@ -54,3 +54,42 @@ header {
   font-size: 14px;
   margin-left: 5px;
 }
+
+/* ---------------------- FormularioTareas  -------------------------*/
+.formulario-tareas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.formulario-tarea__input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #b8b8b8;
+}
+
+.formulario-tarea__input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--azul);
+}
+
+.formulario-tarea__boton {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario-tarea__icono-btn {
+  color: var(--verde);
+  background: white;
+  font-size: 24px;
+}
