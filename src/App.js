@@ -4,13 +4,14 @@ import './App.css';
 //componentes
 import Header from './componentes/Header';
 import FormularioTareas from './componentes/FormularioTareas';
+import ListaTareas from './componentes/ListaTareas';
 
 const App = () => {
   const [tareas, setTareas] = useState([
     {
       id:1,
       texto: 'Lavar la ropa',
-      completada: true
+      completada: false
     }
   ]);
 
@@ -18,6 +19,7 @@ const App = () => {
     <div className="contenedor">
       <Header/>
       <FormularioTareas tareas={tareas} setTareas={setTareas}/>
+      <ListaTareas tareas={tareas}/>
     </div>
   );
 }
